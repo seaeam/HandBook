@@ -52,7 +52,7 @@ function merge_sort(q: number[], l: number, r: number) {
   let k = 0,
     i = l,
     j = mid + 1
-  const tmp = []
+  const tmp: number[] = []
 
   while (i <= mid && j <= r) {
     if (q[i] <= q[j]) tmp[k++] = q[i++]
